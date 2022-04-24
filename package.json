@@ -1,0 +1,25 @@
+{
+  "name": "purescript-template",
+  "version": "0.0.1",
+  "description": "Template for a Purescript project using nix flake",
+  "main": "index.js",
+  "git repository": "https://github.com/purescript/purescript-template",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "spago install",
+    "clean": "rm -rf node_modules output dce-output .spago build dist *.lock .cache",
+    "build": "spago build",
+    "watch": "spago build --watch",
+    "test": "spago test"
+  },
+  "author": "Takafumi Asano <cariandrum22@gmail.com>",
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
